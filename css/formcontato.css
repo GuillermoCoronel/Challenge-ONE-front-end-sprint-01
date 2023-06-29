@@ -1,0 +1,117 @@
+.formcontato {
+    min-width: 1136px;
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.formcontato__contacto {
+    display: flex;
+}
+
+.formcontato__title {
+    margin-left: 1rem;
+    font-family: Raleway;
+    color: #464646;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5rem 0rem;
+}
+
+.formcontato__subtext {
+    margin-left: 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #464646;
+    margin-bottom: .5rem;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.formcontato__input {
+    border-style: none;
+    outline: none;
+    height: 3rem;
+    margin: 1rem 0rem;
+    overflow: hidden;
+}
+
+.formcontato__input::placeholder {
+    font-family: Raleway;
+    color: #a2a2a2;
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+.formcontato__input:hover {
+    border-bottom: 2px solid blue;
+}
+
+.formcontato__textarea {
+    font-family: Raleway;
+    color: #a2a2a2;
+    font-weight: 200;
+    font-size: .8rem;
+    border-style: none;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.formcontato__textarea::placeholder {
+    font-family: Raleway;
+    color: #a2a2a2;
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+.formcontato__textarea:hover {
+    border-bottom: 2px solid blue;
+}
+
+.formcontato__botao {
+    padding: 1rem 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #2A7AE4;
+    color: #FFF;
+    border-style: solid;
+    border-color: #2A7AE4;
+    padding: 1rem 1rem;
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+    .formcontato__img {
+        display: none
+    }
+
+    .formcontato {
+        min-width: 704px;  
+    }
+
+    .formcontato {
+        max-width: 704px;  
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .formcontato__img {
+        display: none
+    }
+
+    .formcontato {
+        min-width: 328px;  
+    }
+
+    .formcontato {
+        max-width: 328px;  
+    }
+}
+
