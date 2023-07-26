@@ -272,21 +272,52 @@
         <section class="formcontato" id="contacto">
             <div  class="formcontato__contacto">
                 <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
+                    <img class="formcontato__img" src="/assets/contact_image.png">
+                </div>        
+
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
+                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
+                    <form action="https://formsubmit.co/guillermocoronel@hotmail.com" method="POST" id="form" class="form">
+                        <div class="contacto">
+                            <label class="falso_placeholder">
+                                <span>Nombre</span>
+                                <input type="text" autocomplete="off" id="name" name="Nombre" maxlength="50">
+                                <span class="error"></span>
+                            </label>
+                        </div>
+                        <div class="contacto">
+                            <label class="falso_placeholder">
+                                <span>E-mail</span>
+                                <input type="email" autocomplete="off" id="email" name="Email">
+                                <span class="error"></span>
+                            </label>
+                        </div>
+                        <div class="contacto">
+                            <label class="falso_placeholder">
+                                <span>Asunto</span>
+                                <input type="text" autocomplete="off" id="asunto" name="Asunto" maxlength="50">
+                                <span class="error"></span>
+                            </label>
+                        </div>
+                        <div class="contacto">
+                            <label class="falso_placeholder">
+                                <span>Mensaje</span>    
+                                <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" id="mensaje" name="Mensaje" maxlength="300"></textarea>
+                                <span class="error"></span>
+                            </label>
+                        </div>    
+                        <button disabled id="btn" type="submit" class="formcontato__botao" class="btn" >Enviar mensaje</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    </form>    
+
+
                 </div>
             </div>
+                
         </section>
 
         <!-- Sección de Footer -->
